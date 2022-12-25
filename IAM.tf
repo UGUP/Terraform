@@ -14,7 +14,7 @@ resource "aws_iam_role_policy" "S3" {
 
 resource "aws_iam_role" "IAM_ROLE" {
   name = "IAM_ROLE"
-  iamrole="${file("role.json")}"
+  assume_role_policy="${file("role.json")}"
 
 }
 
