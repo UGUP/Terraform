@@ -8,5 +8,5 @@ https://www.how2shout.com/linux/how-to-install-terraform-on-linux-such-as-ubuntu
 
 To clear cache
 
-rm -rm .terraform
+rm -rf .terraform
 
