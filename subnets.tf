@@ -3,7 +3,7 @@
 resource "aws_subnet" "public-subnet1" {
   vpc_id     = aws_vpc.VPC.id
   cidr_block = "10.100.1.0/24"
-
+  map_public_ip_on_launch = true
   tags = {
     Name = "public-subnet1"
   }
@@ -12,7 +12,7 @@ resource "aws_subnet" "public-subnet1" {
 resource "aws_subnet" "public-subnet2" {
   vpc_id     = aws_vpc.VPC.id
   cidr_block = "10.100.2.0/24"
-
+  map_public_ip_on_launch = true
   tags = {
     Name = "public-subnet2"
   }
