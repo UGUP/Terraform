@@ -7,10 +7,9 @@ required_providers{
     }
 }
 backend "s3"{
-    bucket = "s3-c38"
+    bucket = "s3-c381"
     key="state/terraform.tfstate"
     region = "us-east-1"
-    dynamodb_table = "c38"
 }
 }
 
