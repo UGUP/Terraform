@@ -6,3 +6,7 @@ Practice Terraform
 3)Install terraform
 https://www.how2shout.com/linux/how-to-install-terraform-on-linux-such-as-ubuntu-20-04-lts-server/
 
+To clear cache
+
+rm -rf .terraform
+
