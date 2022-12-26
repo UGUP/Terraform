@@ -2,7 +2,7 @@
 #Security requires Inbound and outbound rules
 
 resource "aws_security_group" "allow_ssh" {
-  name        = "allow_ssh"
+  name        = var.securitygroup
   description = "Allow ssh"
   vpc_id      = aws_vpc.VPC.id
 
@@ -22,6 +22,6 @@ resource "aws_security_group" "allow_ssh" {
   }
 
   tags = {
-    Name = "allow_ssh"
+    Name = var.securitygroup
   }
 }

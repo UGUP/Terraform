@@ -13,3 +13,10 @@ resource "aws_instance" "Terraform2"{
         Name="terraform-demo-private" 
         }
 }
+
+
+output "EC2_IP_ADDRESS_OF_PRIVATE" {
+  value=aws_instance.Terraform2.associate_public_ip_address
+}
+
+
