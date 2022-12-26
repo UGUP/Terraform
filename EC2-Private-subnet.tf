@@ -3,10 +3,10 @@
 
 
 resource "aws_instance" "Terraform2"{
-     ami = "ami-0a6b2839d44d781b2" # us-east-1 
-     instance_type = "t2.medium" 
+     ami = var.ami # us-east-1 
+     instance_type = var.instancetype
      subnet_id = aws_subnet.private-subnet1.id 
-     key_name= "jenkins3" 
+     key_name= var.key
      iam_instance_profile = aws_iam_instance_profile.EC2_PROFILE.name
      vpc_security_group_ids = [aws_security_group.allow_ssh.id] 
      tags={ 
