@@ -7,7 +7,7 @@ variable "instancetype" {
 }
 
 variable "key" {
-  default = "jenkins"
+  default = "jenkins3"
 }
 
 variable "instanceprofile" {
