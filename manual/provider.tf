@@ -6,10 +6,11 @@ required_providers{
           version = "~> 4.0"
     }
 }
-backend "s3"{
-    bucket = "s3-c38"
-    key="state/terraform.tfstate"
-    region = "us-east-1"
+
+provider "aws"{
+ region="us-east-1"
 }
+
 }
+
 
