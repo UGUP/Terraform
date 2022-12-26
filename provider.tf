@@ -8,8 +8,8 @@ required_providers{
 }
 
 backend "s3" {
-    bucket = var.bucketname
-    key    = var.key
+    bucket = "s3-c38"
+    key    =  "jenkins3"
     region = "us-east-1"
   }
 
