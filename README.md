@@ -7,6 +7,8 @@ Practice Terraform
 https://www.how2shout.com/linux/how-to-install-terraform-on-linux-such-as-ubuntu-20-04-lts-server/
 
 To clear cache
-
 rm -rf .terraform
+
+To run var files as pr the workspace use below
+terraform apply -var-file="dev.tfvars"
 
