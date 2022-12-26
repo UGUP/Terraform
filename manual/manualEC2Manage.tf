@@ -4,11 +4,11 @@
 resource "aws_instance" "Terraform"{
      ami = var.ami # us-east-1 
      instance_type = var.instancetype
-     subnet_id = aws_subnet.public-subnet1.id 
-     iam_instance_profile = aws_iam_instance_profile.EC2_PROFILE.name
+     subnet_id = "subnet-4d33f32b" 
+     iam_instance_profile = "Adminaccess"
      key_name= var.key
-     vpc_security_group_ids = [aws_security_group.allow_ssh.id] 
+     vpc_security_group_ids = ["sg-07aaf9d0f9504cd47"] 
      tags={ 
-        Name="terraform-demo" 
+        Name="Test" 
         }
 }
