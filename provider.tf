@@ -7,13 +7,15 @@ required_providers{
     }
 }
 
-}
-
 backend "s3" {
     bucket = var.bucketname
     key    = var.key
     region = "us-east-1"
   }
+
+}
+
+
 
 
 
