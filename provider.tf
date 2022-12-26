@@ -9,7 +9,7 @@ required_providers{
 
 backend "s3" {
     bucket = "s3-c38"
-    key    =  "jenkins3"
+    key    =  "/state/terraform.tfstate"
     region = "us-east-1"
   }
 
