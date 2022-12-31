@@ -8,7 +8,7 @@ module "ec2_instance" {
   instance_type          = "t2.micro"
   key_name               = "jenk4"
   monitoring             = true
-  vpc_security_group_ids = [module.sg.security_group_id]
+  vpc_security_group_ids = [module.vote_service_sg.security_group_id]
   subnet_id              = module.vpc.public_subnets[0]
 
   tags = {
