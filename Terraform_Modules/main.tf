@@ -21,7 +21,7 @@
 resource "aws_vpc" "main" { 
     cidr_block = "10.0.0.0/16" 
     instance_tenancy = "default" 
-    tags = { Name = "c39-main" } 
+    tags = { Name = "c38-main" } 
 
   lifecycle {
     create_before_destroy=true
