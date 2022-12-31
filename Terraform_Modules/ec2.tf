@@ -8,7 +8,7 @@ module "ec2_instance" {
   instance_type          = "t2.micro"
   key_name               = "jenk4"
   monitoring             = true
-  vpc_security_group_ids = [module.aws_security_group.security_group_vpc_id]
+  vpc_security_group_ids = [module.securitygroup.vpc_security_group_ids]
   subnet_id              = "subnet-eddcdzz4"
 
   tags = {
